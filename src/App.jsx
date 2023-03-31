@@ -4,22 +4,37 @@ import Layout from './Layouts';
 import Accomodation from './Pages/Accomodation';
 import Homepage from './Pages/Homepage';
 import Offers from './Pages/Offers';
+import ContactUs from './Pages/ContactUs';
 import Service from './Pages/Service';
 import './App.css'
+import Activities from './Pages/Activities/Activities';
+import SingleActivities from './Pages/Activities/SingleActivities';
+
+import PaymentDetails from './Pages/payment/PaymentDetails';
+import Page404 from './Pages/Page404';
+import { AnimatePresence } from 'framer-motion';
+
+
 
 function App() {
 
-
+  
   return (
     <>
-    <Routes>
-     <Route path="/plcDubaiTouristApp/" element={<Layout />}>
+      <Routes>
+  
+     <Route path="/" element={<Layout />}>
       <Route index element={<Homepage />} />
-      <Route path="/plcDubaiTouristApp/service" element={<Service />} />
-      <Route path="/plcDubaiTouristApp/accommodation" element={<Accomodation />} />
-      <Route path="/plcDubaiTouristApp/offers" element={<Offers />} />
-     
+      <Route path="/activities/:slug" element={<Activities />} />
+      <Route path="/activities/:slug/:activityslug" element={<SingleActivities />} />
+      <Route path="/payment" element={ <PaymentDetails />} />
+      {/* <Route path="/service" element={<Service />} /> */}
+      {/* <Route path="/accommodation" element={<Accomodation />} /> */}
+      <Route path="/offers" element={<Offers />} />
+      <Route path="/contact-us" element={<ContactUs />} />
+     <Route path='/*' element={<Page404 />} />
      </Route>
+
     </Routes>
    </>
   )

@@ -3,7 +3,7 @@ import img1 from '../assets/homeAssets/service-img.png'
 
 const OurServices = () => {
   return (
-    <section className='bg-[#38414D] h-auto px-8 pt-6 pb-4 md:pb-12 lg:pb-16 xs:px-12 sm:px-3 md:px-5'>
+    <section className='bg-[#38414D] h-auto px-8 pt-6 pb-4 md:pb-12 lg:pb-16 xs:px-12 sm:px-3 md:px-5 ourServices'>
           <h1 className='text-[#EB8C1A] text-center text-[1.8rem] xs:text-[2rem] font-bold mb-4 sm:text-[2.3rem] lg:font-extrabold lg:text-[2.6rem] lg:mb-8'>Our Services</h1>
           <div className='flex flex-col md:flex-row justify-between sm:w-[100%] sm:px-14 md:px-4 xs:items-center sm:items-start lg:px-24 lg:mx-auto'>
               <img src={img1} loading="lazy" alt='img' className='w-100 md:mr-10 md:w-[48%] mb-5 md:mb-0 lg:mr-12 lg:max-h-[330px]' />

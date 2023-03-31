@@ -2,6 +2,7 @@ import React from 'react'
 import { SlSocialFacebook, SlSocialInstagram, SlSocialTwitter } from "react-icons/sl";
 import { BsYoutube } from "react-icons/bs";  
 import { MdOutlineEmail } from "react-icons/md";  
+import { Link } from 'react-router-dom';
 
 
 const Footer = () => {
@@ -12,18 +13,39 @@ const Footer = () => {
           <div>
           <h1 className='font-bold mb-4 md:mb-6 text-[#EB8C1A]'>EXPLORE</h1>
             <ul className='mb-10 sm:mb-0'>
-              <li className='mb-3 font-semibold text-[.9rem] text-white'>Safari</li>
+            <Link to='/activities/desert-tour'>
+            <li className='mb-3 font-semibold text-[.9rem] text-white'>Desert Tour</li>
+              </Link>
+              
+              <Link to='/activities/speed-boating'>
               <li className='mb-3 font-semibold text-[.9rem] text-white'>Speed Boating</li>
+              </Link>
+
+              <Link to='/activities/skydiving'>
               <li className='mb-3 font-semibold text-[.9rem] text-white'>Sky Diving</li>
-              <li className='mb-3 font-semibold text-[.9rem] text-white'>Adventure</li>
-              <li className='mb-3 font-semibold text-[.9rem] text-white'>Tastings</li>
-              <li className='mb-3 font-semibold text-[.9rem] text-white'>Mall Tour</li>
+              </Link>
+
+              <Link to='/activities/luxury-tour'>
+              <li className='mb-3 font-semibold text-[.9rem] text-white'>Luxury Tour</li>
+              </Link>
+              
+
+              <Link to='/activities/combo-tours'>
+              <li className='mb-3 font-semibold text-[.9rem] text-white'>Combo Tours</li>
+              </Link>
+              
+
+              <Link to='/activities/tourist-attraction'>
+              <li className='mb-3 font-semibold text-[.9rem] text-white'>Tourist Attraction</li>
+              </Link>
+              
             </ul>
           
           </div>
           <div>
           <h1 className='font-bold mb-4 md:mb-6 text-[#EB8C1A]'>Top Places </h1>
             <ul className='mb-10 sm:mb-0'>
+              
               <li className='mb-3 font-semibold text-[.9rem] text-white'>Burj Khalifa</li>
               <li className='mb-3 font-semibold text-[.9rem] text-white'>Dubai Aquatic</li>
               <li className='mb-3 font-semibold text-[.9rem] text-white'>Legoland Water Park</li>

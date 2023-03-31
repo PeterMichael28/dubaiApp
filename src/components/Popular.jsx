@@ -7,7 +7,7 @@ import img4 from '../assets/homeAssets/att4.png'
 
 const Popular = () => {
   return (
-    <section className='pt-10 px-4'>
+    <section className='pt-10 px-4 popularSection'>
           <h1 className='text-[#EB8C1A] font-bold text-center text-[1.7rem] mb-6 md:text-[2rem] '>Popular Tourist Attraction</h1>
           <div className='flex flex-col items-center sm:flex-row sm:flex-wrap sm:px-4 md:px-10 lg:px-20 md:justify-center'>
               <div

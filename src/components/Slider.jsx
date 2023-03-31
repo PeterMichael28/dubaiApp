@@ -1,6 +1,6 @@
 import React from "react";
 
-const Slider = () => {
+const Slider = ({images}) => {
  return (
   <div
    id="carouselExampleIndicators"
@@ -30,26 +30,27 @@ const Slider = () => {
     ></button>
    </div>
    <div className="carousel-inner relative w-full overflow-hidden">
-    <div className="carousel-item active float-left w-full">
+   <div className="carousel-item active float-left w-full ">
      <img
-      src="https://mdbcdn.b-cdn.net/img/new/slides/041.webp"
+      src={images[0]}
       className="block w-full"
       alt="Wild Landscape"
+      
      />
     </div>
     <div className="carousel-item float-left w-full">
-     <img
-      src="https://mdbcdn.b-cdn.net/img/new/slides/042.webp"
-      className="block w-full"
+     {images[1] && <img
+      src={images[1]}
+      className="block w-full "
       alt="Camera"
-     />
+     />}
     </div>
     <div className="carousel-item float-left w-full">
-     <img
-      src="https://mdbcdn.b-cdn.net/img/new/slides/043.webp"
+    {images[2] &&  <img
+      src={images[2]}
       className="block w-full"
       alt="Exotic Fruits"
-     />
+     />}
     </div>
    </div>
    <button

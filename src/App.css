@@ -1,3 +1,7 @@
+body{
+  font-family: 'Montserrat', sans-serif;
+}
+
 .boxs {
     box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, .2),
         -2px -2px 5px 2px rgba(0, 0, 0, .2);
@@ -58,4 +62,117 @@
   .carousel img {
     height: 350px;
     border-radius: 10px;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  @media(width < 640px) {
+    .carousel img {
+      height: 250px;
+    }
+  }
+
+  @media(width < 290px) {
+    .hero h1 {
+      font-size: 3rem;
+    }
+    .hero h4{
+      font-size: .8rem;
+    }
+
+    .ourServices img,
+    .ourServices h1 {
+      margin-bottom: 5px;
+    }
+   
+    .ourServices p{
+      font-size: 0.7rem;
+    }
+
+    .popularSection>h1 {
+      font-size: 1.5rem;
+    }
+    .popularSection>div .popular1,
+    .popularSection>div .popular2 {
+      height: 10rem;
+      font-size: 1.2rem;
+    } 
+
+    .banner.section p{
+      font-size: 1.2rem;
+    }
+
+    .sinAttraction{
+      height: 19rem !important;
+    }
+
+    .allServices .banner{
+      height: 18vh;
+    }
+
+    .allServices .eachSer {
+      padding: 8px;
+    }
+    .allServices .eachSer>div:nth-of-type(1) {
+      gap: 2px;
+    }
+
+    .allServices img{
+      height: 200px;
+      width: 100%;
+    }
+
+    .allServices .eachSer>div:nth-of-type(1)>span:nth-of-type(2){
+     font-size: 0.9rem;
+    }
+
+    .allServices .eachSer>div:nth-of-type(1)>h1{
+      font-size: 1.1rem;
+     }
+     .allServices .eachSer>div:nth-of-type(1)>p{
+      font-size: .76rem;
+     }
+
+     .allServices .eachSer>div:nth-of-type(1)>div>p{
+      display: flex;
+      flex-direction: column;
+      margin: 0 7px;
+     }
+
+     .allServices .eachSer>div:nth-of-type(2) {
+      gap: 0px;
+    }
+    .allServices .eachSer>div:nth-of-type(2) h1 {
+      font-size: 1.1rem;
+    }
+    .allServices .eachSer>div:nth-of-type(2) span {
+      font-size: .9rem;
+    }
+
+    .allServices .eachSer>div:nth-of-type(2)>div:nth-of-type(2) {
+      margin-top: -20px;
+      margin-bottom: 10px;
+    }
+
+
+    .singleActivities>div:nth-of-type(2)>h2 {
+      margin-bottom: 5px;
+    }
+
+    .singleActivities>div:nth-of-type(2)>div>p {
+      display: flex;
+      flex-direction: column;
+      margin: 0 8px;
+    }
+
+    .singleActivities .sliderCon>div:nth-of-type(1)>.carousel img {
+      height: 15rem;
+    }
+    .singleActivities .description> p {
+        font-size: 0.76rem;
+    }
+
+    .singleActivities .aboutActivity>h2{
+      font-size: 1.1rem;
+    }
   }

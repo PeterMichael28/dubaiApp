@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -9,7 +11,7 @@
 }
 @layer components {
   .nav-link {
-      @apply cursor-pointer text-[1.3rem] font-semibold text-white transition duration-[.2s] hover:text-[#EB8C1A];
+      @apply cursor-pointer text-[.9rem] font-semibold text-white transition duration-[.2s] hover:text-[#EB8C1A];
   }
   .active {
       @apply text-[#EB8C1A]
@@ -26,14 +28,14 @@
   }
 
   .popular1 {
-    @apply h-[12rem] lg:h-[14rem] bg-cover rounded-lg mb-6 flex items-end text-white px-4 pb-2 font-semibold text-[1.3rem] w-10/12 xs:w-9/12 sm:w-[48%] lg:w-[47%]
+    @apply h-[12rem] lg:h-[14rem] bg-cover rounded-lg mb-6 flex items-end text-white px-4 pb-2 font-semibold text-[1.3rem] w-11/12 xs:w-9/12 sm:w-[48%] lg:w-[47%]
   }
 
   .popular2 {
-    @apply h-[12rem] lg:h-[14rem] bg-cover rounded-lg mb-6 flex items-end text-white px-4 pb-2 font-semibold text-[1.3rem] w-10/12 xs:w-9/12 sm:w-[48%] sm:mr-4 md:mr-6 lg:w-[47%] lg:mr-12
+    @apply h-[12rem] lg:h-[14rem] bg-cover rounded-lg mb-6 flex items-end text-white px-4 pb-2 font-semibold text-[1.3rem] w-11/12 xs:w-9/12 sm:w-[48%] sm:mr-4 md:mr-6 lg:w-[47%] lg:mr-12
   }
 
   .attractions {
-    @apply bg-cover w-[90%] sm:w-[47%] h-[23rem] md:w-[20rem] lg:w-[22rem] flex items-end px-5 pb-5 sm:mr-3 relative md:ml-5 md:min-w-[20rem] md:h-[400px] rounded-lg text-[1.4rem] font-semibold text-white mb-6 md:mb-0 cursor-pointer transition duration-200 ease-out
+    @apply bg-cover w-full h-full flex items-end px-5 pb-5 relative rounded-lg text-[1.4rem] font-semibold text-white cursor-pointer transition duration-200 ease-out
   }
 }

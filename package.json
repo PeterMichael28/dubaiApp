@@ -9,15 +9,23 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "framer-motion": "^10.2.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-hot-toast": "^2.4.0",
     "react-icons": "^4.6.0",
+    "react-paystack": "^4.0.2",
+    "react-query": "^3.39.3",
     "react-router-dom": "^6.4.3",
+    "recoil": "^0.7.7",
     "tailwind-scrollbar": "^2.0.1",
     "tailwind-scrollbar-hide": "^1.1.7",
-    "tw-elements": "^1.0.0-alpha13"
+    "tw-elements": "^1.0.0-alpha13",
+    "@emailjs/browser": "^3.7.0",
+    "axios": "^1.2.3"
   },
   "devDependencies": {
+    "@tailwindcss/line-clamp": "^0.4.2",
     "@types/react": "^18.0.24",
     "@types/react-dom": "^18.0.8",
     "@vitejs/plugin-react": "^2.2.0",
